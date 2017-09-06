@@ -1,0 +1,82 @@
+.barbermenu:not(:last-child) {
+    margin-right: 6vw;
+}
+
+.barbermenuitem {
+
+}
+
+.barbermenuitem:hover {
+    color: #004a8e;
+    text-decoration: none;
+
+}
+
+.barbermenuitem:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.barbermenuitem:focus {
+    text-decoration: underline;
+    color: white;
+}
+
+.activemenuitem {
+
+    text-decoration: underline;
+}
+
+.profilepicture_desktop {
+    min-height: 35vh;
+}
+
+.bullitlist {
+
+}
+@media (orientation: landscape) {
+    .profilepicture {
+        max-height: 45vh;
+    }
+
+    .bullitlist {
+        font-size: 5vh;
+        margin-top: 3vh;
+        margin-bottom: 0px;
+    }
+    .barbers{
+        padding-bottom: 1.5em;
+    }
+}
+
+@media (orientation: portrait) {
+    .profilepicture {
+        max-height: 35vh;
+
+    }
+
+    .bullitlist {
+        font-size: 5vw;
+    }
+}
+
+.activebarber {
+    display: block !important;
+}
+
+.Frank, .Stilian, .Kerr, .David {
+    display: none;
+}
+
+#contactcanvas {
+    padding-top: 1vh;
+    min-height: 40vh;
+    min-width: 100%;
+}
+
+#headingmenu {
+    background-image: url(../images/black-Linen.png);
+    opacity: 0.9;
+    padding-top: 0.5rem;
+    border-radius: 5px 5px 5px 5px;
+}
