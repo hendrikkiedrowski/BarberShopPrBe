@@ -28,24 +28,39 @@
 }
 
 .profilepicture_desktop {
-    min-height: 35vh;
+    min-height: 25vh;
 }
 
 .bullitlist {
-
+    text-align: left;
 }
+
 @media (orientation: landscape) {
     .profilepicture {
         max-height: 45vh;
     }
 
+    @media screen and (max-device-width: 400px) {
+        .bullitlist {
+            font-size: 5vw;
+        }
+    }
     .bullitlist {
-        font-size: 5vh;
         margin-top: 3vh;
         margin-bottom: 0px;
     }
-    .barbers{
+
+    .barbers {
         padding-bottom: 1.5em;
+    }
+
+    .btn {
+        font-size: 2vw;
+    }
+}
+@media screen and (min-device-width: 768px){
+    .bullitlist{
+        font-size: 1.5em;
     }
 }
 
@@ -55,8 +70,13 @@
 
     }
 
-    .bullitlist {
-        font-size: 5vw;
+    @media screen and (max-device-width: 400px) {
+        .bullitlist {
+            font-size: 5vw;
+        }
+    }
+    .btn {
+        font-size: 2vh;
     }
 }
 
@@ -64,7 +84,7 @@
     display: block !important;
 }
 
-.Frank, .Stilian, .Kerr, .David {
+.Frank, .Stilian, .Kerr, .David, .Joel, .Jake {
     display: none;
 }
 

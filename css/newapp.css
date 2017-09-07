@@ -152,15 +152,26 @@ h1:before {
 }
 
 .about {
-    background-image: url(../images/backcont.jpg);
+    z-index: 1;
     text-align: center;
     -webkit-box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
     -moz-box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
     box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
-    opacity: 0.9;
     color: rgb(0, 0, 0);
     border-radius: 10px;
     padding-top: 1.25em;
+}
+.about:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/backcont.jpg);
+    opacity: .9;
+    border-radius: 10px;
 }
 
 .impressum {
@@ -211,7 +222,7 @@ h1 {
 }
 
 .pics {
-    margin-bottom: -30px;
+    margin-bottom: -25px;
     z-index: 100;
 }
 
@@ -359,20 +370,19 @@ h1 {
     padding-bottom: 50px;
 }
 
-.card-columns {
 
-@include media-breakpoint-only(lg) {
-    column-count: 3;
+@media screen and (max-device-width: 400px) {
+    .lefttext > p {
+        font-size: 5vw;
+    }
 }
-@include media-breakpoint-only(xl) {
-    column-count: 3;
-}
-}
+
+
 .lefttext {
     text-align: left;
     float: left;
     display: block;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .righttext {
