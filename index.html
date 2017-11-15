@@ -21,6 +21,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
           integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/newapp.css" charset="utf-8">
+    <!- Scripts-!>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+            integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"
+            integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
+            integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
+            crossorigin="anonymous"></script>
+
     <script src="https://use.fontawesome.com/3253bd5bda.js"></script>
     <script src="js/app.js"></script>
 
@@ -140,7 +151,7 @@
                             <br><span style="font-size: small;">E-Mail:&nbsp;<a href="mailto:pk@gertrac.de"
                                                                                 target="_blank">pk@gertrac.de</a></span>
                             <br>
-                            <span style="font-size: small;">Geschäftsführer: </span><span style="font-size: small;">Alexander Petrovichev</span>
+                            <span style="font-size: small;">Geschaeftsfuehrer: </span><span style="font-size: small;">Alexander Petrovichev</span>
                             <br>
                             <span style="font-size: small;">Registergericht: Amtsgericht Charlottenburg, HRB 165621</span>
                             <br>
@@ -201,6 +212,36 @@
     </div>
     <div class="row">
         <div class="offset-md-2 col-md-8 about">
+            <h1 id="service">Services</h1>
+            <div class="row">
+
+                <div class="col-xs-8 lefttext">Haarschnitt</div>
+                <div class="col-xs-4 righttext">27€</div>
+
+            </div>
+            <!--/normal-->
+            <div class="row">
+
+                <div class="col-xs-8 lefttext">Heiss-Handtuch-Rasur/Bart Trimm</div>
+                <div class="col-xs-4 righttext">27€</div>
+
+            </div>
+            <!--/normal-->
+            <div class="row">
+
+                <div class="col-xs-8 lefttext">Bart Form</div>
+                <div class="col-xs-4 righttext">17€</div>
+
+            </div>
+            <!--/normal-->
+            <div class="row">
+
+                <div class="col-xs-8 lefttext">Kopf-Massage</div>
+                <div class="col-xs-4 righttext">17€</div>
+
+            </div>
+
+            <!--/normal-->
             <h1 id="prices">Packages</h1>
             <div class="row">
 
@@ -232,41 +273,12 @@
 
             </div>
             <!--/normal-->
-            <h1 id="service">Regular</h1>
-            <div class="row">
-
-                <div class="col-xs-8 lefttext">Haarschnitt</div>
-                <div class="col-xs-4 righttext">27€</div>
-
-            </div>
-            <!--/normal-->
-            <div class="row">
-
-                <div class="col-xs-8 lefttext">Heiss-Handtuch-Rasur/Bart Trimm</div>
-                <div class="col-xs-4 righttext">27€</div>
-
-            </div>
-            <!--/normal-->
-            <div class="row">
-
-                <div class="col-xs-8 lefttext">Bart Form</div>
-                <div class="col-xs-4 righttext">17€</div>
-
-            </div>
-            <!--/normal-->
-            <div class="row">
-
-                <div class="col-xs-8 lefttext">Kopf-Massage</div>
-                <div class="col-xs-4 righttext">17€</div>
-
-            </div>
             <!--/normal-->
             <div class="row">
                 <p class="normal">
                 <p class="copyright">Alle Preise verstehen sich inklusive Mehrwertsteuer</p>
                 </p>
             </div>
-            <!--/normal-->
         </div>
     </div>
     <!--/service-->
@@ -307,6 +319,21 @@
                                     class="barbermenuitem btn btn-secondary Kerrmenu"
                                     id="Kerrmenu"
                                     onclick="cyclebarber('.Kerr')">Kerr
+                            </button>
+                            <button type="button"
+                                    class="barbermenuitem btn btn-secondary Jakemenu"
+                                    id="Jakemenu"
+                                    onclick="cyclebarber('.Jake')">Jake
+                            </button>
+                            <button type="button"
+                                    class="barbermenuitem btn btn-secondary Joelmenu"
+                                    id="Joelmenu"
+                                    onclick="cyclebarber('.Joel')">Joel
+                            </button>
+                            <button type="button"
+                                    class="barbermenuitem btn btn-secondary Daramenu"
+                                    id="Daramenu"
+                                    onclick="cyclebarber('.Dara')">Dara
                             </button>
 
                         </div>
@@ -377,6 +404,51 @@
                             </div>
                         </div>
                     </div>
+                    <div class="offset-md-1 col-md-10 Jake">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="images/barbers/jake.png" alt="Jake" class="profilepicture_desktop">
+                            </div>
+                            <div class="col-xs-7">
+                                <ul class="bullitlist">
+                                    <li>ein Barbier aus England – Bristol</li>
+                                    <li>mit jahrelanger Barbiererfahrung</li>
+                                    <li>mit einer wahren Leidenschaft zum Handwerk, einem scharfen Auge fuers Detail und einer angenehmen Unterhaltung</li>
+                                    <li>bei ihm bekommst du mehr als nur einen Haarschnitt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-10 Joel">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="images/barbers/joel.png" alt="Joel" class="profilepicture_desktop">
+                            </div>
+                            <div class="col-xs-7">
+                                <ul class="bullitlist">
+                                    <li>Unser Barbier aus Liverpool (England)</li>
+                                    <li>In London und Brighton arbeitete er in den besten Shops</li>
+                                    <li>Ein Freund von Vintage-Haarschnitten mit moderner Technik</li>
+                                    <li>Er arbeitete fuer “Monster Energy“ auf Events in ganz Europa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-10 Dara">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="images/barbers/dara.png" alt="Dara" class="profilepicture_desktop">
+                            </div>
+                            <div class="col-xs-7">
+                                <ul class="bullitlist">
+                                    <li>Unser Barbier aus Belfast, der Stadt der Kontraste</li>
+                                    <li>Reiche Erfahrungen aus den verschiedensten Orten der Erde</li>
+                                    <li>Achtet aufs kleinste Detail</li>
+                                    <li>ein passionierter Profi, der seine Kreativitaet mit großem Vergnügen auslebt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row hidden-md-up" id="mobilecontactcanvas">
                     <div class="col-xs-12 col-md-9 activebarber Frank">
@@ -443,9 +515,53 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-12 col-md-9 Jake">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 text-xs-center">
+                                <img src="images/barbers/david.png" alt="David" class="profilepicture">
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <ul class="bullitlist">
+                                    <li>ein Barbier aus England – Bristol</li>
+                                    <li>mit jahrelanger Barbiererfahrung</li>
+                                    <li>mit einer wahren Leidenschaft zum Handwerk, einem scharfen Auge fuers Detail und einer angenehmen Unterhaltung</li>
+                                    <li>bei ihm bekommst du mehr als nur einen Haarschnitt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-9 Joel">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 text-xs-center">
+                                <img src="images/barbers/david.png" alt="David" class="profilepicture">
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <ul class="bullitlist">
+                                    <li>Unser Barbier aus Liverpool (England)</li>
+                                    <li>In London und Brighton arbeitete er in den besten Shops</li>
+                                    <li>Ein Freund von Vintage-Haarschnitten mit moderner Technik</li>
+                                    <li>Er arbeitete fuer “Monster Energy“ auf Events in ganz Europa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-9 Dara">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 text-xs-center">
+                                <img src="images/barbers/dara.png" alt="Dara" class="profilepicture">
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <ul class="bullitlist">
+                                    <li>Unser Barbier aus Belfast, der Stadt der Kontraste</li>
+                                    <li>Reiche Erfahrungen aus den verschiedensten Orten der Erde</li>
+                                    <li>Achtet aufs kleinste Detail</li>
+                                    <li>ein passionierter Profi, der seine Kreativitaet mit großem Vergnuegen auslebt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
 
     <div class="row dist">
@@ -568,11 +684,11 @@
     <div class="row dist">
 
     </div>
-</div>
+
 <footer class="footer">
     <div class="row">
         <div class="col-xs-5 text-xs-left">
-            Mo-Sa 9 - 21 Uhr
+            Mo-Sa 10 - 20 Uhr
         </div>
         <div class="col-xs-2 text-xs-center">
             <a data-toggle="modal" data-target="#impressum" id="impressum">Impressum</a>
@@ -582,22 +698,12 @@
            <div class="hidden-sm-up"><a href="https://goo.gl/maps/i2umzfuMZdT2"><i class="fa fa-map-marker" aria-hidden="true"></i> Get to Us</a></div>
             <div class="hidden-md-down">
                 <i class="fa fa-map-marker" aria-hidden="true"></i> Kollwitzstrasse 71, 10435 Berlin
-                <i class="fa fa-phone" aria-hidden="true"></i> 030/64437897
+                <i class="fa fa-phone" aria-hidden="true"></i> 0152 / 09866085
             </div>
         </div>
     </div>
 </footer>
-
-<!- Scripts-!>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
-        integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"
-        integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
-        integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
-        crossorigin="anonymous"></script>
+    </div>
 
 <script>
     (function (i, s, o, g, r, a, m) {
