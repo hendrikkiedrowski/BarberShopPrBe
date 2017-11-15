@@ -119,7 +119,7 @@ var dict = {
 var translator;
 
 function translate() {
-    if ((navigator.language || navigator.userLanguage) == "de") {
+    if ((navigator.language || navigator.userLanguage) != "de") {
 
         translator = $('body').translate({lang: "en", t: dict}); //use English
     }
