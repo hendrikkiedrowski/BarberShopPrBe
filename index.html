@@ -36,13 +36,15 @@
     <script src="js/app.js"></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/jquery.translate.js"></script>
+    <script src="js/dict.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target="#navbar">
+<body data-spy="scroll" data-target="#navbar" onload="translate()">
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12" id="navlogo">
@@ -57,19 +59,18 @@
                         class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
             <div class="col-xs-4" id="termin">
-                <button id="terminbtn" class="btn" data-toggle="modal" data-target="#myModal">Termin Buchen</button>
+                <button id="terminbtn" class="btn" data-toggle="modal" data-target="#myModal"><span class="trn">Termin Buchen</span></button>
             </div>
         </div>
 
         <div class="collapse navbar-toggleable-sm row" id="navbarResponsive">
             <div class="col-md-6">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">Ueber uns</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#prices">Preise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><span class="trn">Ueber uns</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices"><span class="trn">Preise</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#barbers">Barbers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
-                    <li class="nav-item"><a data-toggle="modal" data-target="#myModal" class="nav-link">Termin
-                        Buchen</a></li>
+                    <li class="nav-item"><a data-toggle="modal" data-target="#myModal" class="nav-link"><span class="trn">Termin Buchen</span></a></li>
                 </ul>
             </div>
             <div class="col-md-6 text-sm-right" id="social">
@@ -84,10 +85,6 @@
                         <a href="https://www.instagram.com/rowdy_barbershop/" target="_blank">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                             </i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="index_en.html"><img src="images/united_kingdom_2x.png" alt="" class="languagepic"/>
                         </a>
                     </li>
                 </ul>
@@ -178,25 +175,14 @@
 
     <div class="row">
         <div class="offset-md-2 col-md-8 about">
-            <h1 id="about">ROWDY - Berlin's wahrer Barber Shop</h1>
-            <p id="ueberuns">
-                Unser Barbershop ROWDY wurde aus Liebe zum Barbier-Beruf ins Leben gerufen. Er wird von Barbieren
-                gefuehrt, die als Meister ihres Handwerks Wert auf jedes kleinste Detail legen. Egal mit welchem
-                Anliegen Sie zu uns kommen – Dank unserer jahrelangen Erfahrung
-                und unserer speziell auf den Mann zugeschnittenen Expertise, erfuellen wir jeden Wunsch mit Perfektion.
-                ROWDY Barber Shop - ein dem Handwerk gewidmeter Ort ohne jeglichen Ueberfluss. Hier haben Maenner die
-                Moeglichkeit, ausschliesslich
-                auf sie abgestimmte Angebote und das dazugehoerige Ambiente zu entdecken. Egal ob Haar-, Bartschnitt
-                oder Rasur, bei freundschaftlichen Gespraechen hat jeder Mann die Moeglichkeit, sich vom Alltag zu
-                entspannen. Ohne aufdringliche
-                Musik und kunterbuntes Design. ROWDY heisst: - Spezialisierung auf Bart-Trimm, professionelle
-                Maennerhaarschnitte und Rasuren mit der Rasierklinge
+            <h1 class="trn" id="about">ROWDY - Berlin's wahrer Barber Shop</h1>
+            <p id="ueberuns"><span class="trn">Unser Barbershop ROWDY wurde aus Liebe zum Barbier-Beruf ins Leben gerufen. Er wird von Barbieren gefuehrt, die als Meister ihres Handwerks Wert auf jedes kleinste Detail legen. Egal mit welchem Anliegen Sie zu uns kommen - Dank unserer jahrelangen Erfahrung und unserer speziell auf den Mann zugeschnittenen Expertise, erfuellen wir jeden Wunsch mit Perfektion. ROWDY Barber Shop - ein dem Handwerk gewidmeter Ort ohne jeglichen Ueberfluss. Hier haben Maenner die Moeglichkeit, ausschliesslich auf sie abgestimmte Angebote und das dazugehoerige Ambiente zu entdecken. Egal ob Haar-, Bartschnitt oder Rasur, bei freundschaftlichen Gespraechen hat jeder Mann die Moeglichkeit, sich vom Alltag zu entspannen. Ohne aufdringliche Musik und kunterbuntes Design. ROWDY heisst: - Spezialisierung auf Bart-Trimm, professionelle Maennerhaarschnitte und Rasuren mit der Rasierklinge</span><br>
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <br> <span class="trn">Entwicklung und Verkauf von Bart- und Haarpflegeprodukten hoechster Qualitaet</span>
                 <br><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                <br> Entwicklung und Verkauf von Bart- und Haarpflegeprodukten hoechster Qualitaet
+                <br> <span class="trn">Ein Team professioneller und erfahrener Barbiere bietet Spitzen-Service mit dem perfekten Look</span>
                 <br><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                <br> Ein Team professioneller und erfahrener Barbiere bietet Spitzen-Service mit dem perfekten Look
-                <br><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                <br> Jeder Mann – jeder Wunsch – ein Ort: ROWDY
+                <br> <span class="trn">Jeder Mann - jeder Wunsch - ein Ort: ROWDY</span>
             </p>
         </div>
     </div>
@@ -347,12 +333,12 @@
                             </div>
                             <div class="col-xs-7">
                                 <ul class="bullitlist">
-                                    <li>Barbier mit einer mehr als 30 jaehrigen Erfahrung</li>
-                                    <li>Seminarleiter und Barbier Trainer</li>
-                                    <li>Vormalig Kreativpartner und Akteur der Unternehmen:
-                                        <br/> American Crew - Goldwell - Londa - Revlon - Schwarzkopf
+                                    <li class="trn">Barbier mit einer mehr als 30 jaehrigen Erfahrung</li>
+                                    <li class="trn">Seminarleiter und Barbier Trainer</li>
+                                    <li><span class="trn">Vormalig Kreativpartner und Akteur der Unternehmen:</span>
+                                        <br/> <span>American Crew - Goldwell - Londa - Revlon - Schwarzkopf</span>
                                     </li>
-                                    <li>In Kooperation mit Film und Fernsehen</li>
+                                    <li class="trn">In Kooperation mit Film und Fernsehen</li>
                                 </ul>
                             </div>
                         </div>
@@ -364,12 +350,10 @@
                             </div>
                             <div class="col-xs-7">
                                 <ul class="bullitlist">
-                                    <li>Mit der Erfahrung bester Londoner Barbershops</li>
-                                    <li>Schnellste Schere und gruendlichste Rasur</li>
-                                    <li>Ein Barbier von Herz und Seele</li>
-                                    <li>Mit seiner freundlichen harten Art laesst er in Bezug auf Herrenhaarschnitt
-                                        oder Rasur keinen Wunsch offen
-                                    </li>
+                                    <li class="trn">Mit der Erfahrung bester Londoner Barbershops</li>
+                                    <li class="trn">Schnellste Schere und gruendlichste Rasur</li>
+                                    <li class="trn">Ein Barbier von Herz und Seele</li>
+                                    <li class="trn">Mit seiner freundlichen harten Art laesst er in Bezug auf Herrenhaarschnitt oder Rasur keinen Wunsch offen</li>
                                 </ul>
                             </div>
                         </div>
@@ -381,10 +365,10 @@
                             </div>
                             <div class="col-xs-7">
                                 <ul class="bullitlist">
-                                    <li>Das Original aus Schottland</li>
-                                    <li>Ein Barbier in dritter Generation</li>
-                                    <li>Mit der Erfahrung aus aller Welt</li>
-                                    <li>Sein Beruf ist seine Leidenschaft</li>
+                                    <li class="trn">Das Original aus Schottland</li>
+                                    <li class="trn">Ein Barbier in dritter Generation</li>
+                                    <li class="trn">Mit der Erfahrung aus aller Welt</li>
+                                    <li class="trn">Sein Beruf ist seine Leidenschaft</li>
                                 </ul>
                             </div>
                         </div>
@@ -396,10 +380,10 @@
                             </div>
                             <div class="col-xs-7">
                                 <ul class="bullitlist">
-                                    <li>Unser Barbier aus England</li>
-                                    <li>Trainierte und arbeitete mit den besten Barbieren Englands</li>
-                                    <li>Kreativ mit einem Auge fuers Detail</li>
-                                    <li>Ein Barbier, der seine Arbeit liebt</li>
+                                    <li class="trn">Unser Barbier aus England</li>
+                                    <li class="trn">Trainierte und arbeitete mit den besten Barbieren Englands</li>
+                                    <li class="trn">Kreativ mit einem Auge fuers Detail</li>
+                                    <li class="trn">Ein Barbier, der seine Arbeit liebt</li>
                                 </ul>
                             </div>
                         </div>
@@ -411,10 +395,10 @@
                             </div>
                             <div class="col-xs-7">
                                 <ul class="bullitlist">
-                                    <li>ein Barbier aus England – Bristol</li>
-                                    <li>mit jahrelanger Barbiererfahrung</li>
-                                    <li>mit einer wahren Leidenschaft zum Handwerk, einem scharfen Auge fuers Detail und einer angenehmen Unterhaltung</li>
-                                    <li>bei ihm bekommst du mehr als nur einen Haarschnitt</li>
+                                    <li class="trn">ein Barbier aus England - Bristol</li>
+                                    <li class="trn">mit jahrelanger Barbiererfahrung</li>
+                                    <li class="trn">mit einer wahren Leidenschaft zum Handwerk, einem scharfen Auge fuers Detail und einer angenehmen Unterhaltung</li>
+                                    <li class="trn">bei ihm bekommst du mehr als nur einen Haarschnitt</li>
                                 </ul>
                             </div>
                         </div>
@@ -426,10 +410,10 @@
                             </div>
                             <div class="col-xs-7">
                                 <ul class="bullitlist">
-                                    <li>Unser Barbier aus Liverpool (England)</li>
-                                    <li>In London und Brighton arbeitete er in den besten Shops</li>
-                                    <li>Ein Freund von Vintage-Haarschnitten mit moderner Technik</li>
-                                    <li>Er arbeitete fuer “Monster Energy“ auf Events in ganz Europa</li>
+                                    <li class="trn">Unser Barbier aus Liverpool (England)</li>
+                                    <li class="trn">In London und Brighton arbeitete er in den besten Shops</li>
+                                    <li class="trn">Ein Freund von Vintage-Haarschnitten mit moderner Technik</li>
+                                    <li class="trn">Er arbeitete fuer “Monster Energy“ auf Events in ganz Europa</li>
                                 </ul>
                             </div>
                         </div>
@@ -441,10 +425,10 @@
                             </div>
                             <div class="col-xs-7">
                                 <ul class="bullitlist">
-                                    <li>Unser Barbier aus Belfast, der Stadt der Kontraste</li>
-                                    <li>Reiche Erfahrungen aus den verschiedensten Orten der Erde</li>
-                                    <li>Achtet aufs kleinste Detail</li>
-                                    <li>ein passionierter Profi, der seine Kreativitaet mit großem Vergnügen auslebt</li>
+                                    <li class="trn">Unser Barbier aus Belfast, der Stadt der Kontraste</li>
+                                    <li class="trn">Reiche Erfahrungen aus den verschiedensten Orten der Erde</li>
+                                    <li class="trn">Achtet aufs kleinste Detail</li>
+                                    <li class="trn">ein passionierter Profi, der seine Kreativitaet mit hohem Vergnuegen auslebt</li>
                                 </ul>
                             </div>
                         </div>
@@ -458,12 +442,12 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <ul class="bullitlist">
-                                    <li>Barbier mit einer mehr als 30 jaehrigen Erfahrung</li>
-                                    <li>Seminarleiter und Barbier Trainer</li>
-                                    <li>Vormalig Kreativpartner und Akteur der Unternehmen:
+                                    <li class="trn">Barbier mit einer mehr als 30 jaehrigen Erfahrung</li>
+                                    <li class="trn">Seminarleiter und Barbier Trainer</li>
+                                    <li><span class="trn">Vormalig Kreativpartner und Akteur der Unternehmen:</span>
                                         <br/> American Crew - Goldwell - Londa - Revlon - Schwarzkopf
                                     </li>
-                                    <li>In Kooperation mit Film und Fernsehen</li>
+                                    <li class="trn">In Kooperation mit Film und Fernsehen</li>
                                 </ul>
                             </div>
                         </div>
@@ -475,12 +459,10 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <ul class="bullitlist">
-                                    <li>Mit der Erfahrung bester Londoner Barbershops</li>
-                                    <li>Schnellste Schere und gruendlichste Rasur</li>
-                                    <li>Ein Barbier von Herz und Seele</li>
-                                    <li>Mit seiner freundlichen harten Art laesst er in Bezug auf Herrenhaarschnitt
-                                        oder Rasur keinen Wunsch offen
-                                    </li>
+                                    <li class="trn">Mit der Erfahrung bester Londoner Barbershops</li>
+                                    <li class="trn">Schnellste Schere und gruendlichste Rasur</li>
+                                    <li class="trn">Ein Barbier von Herz und Seele</li>
+                                    <li class="trn">Mit seiner freundlichen harten Art laesst er in Bezug auf Herrenhaarschnitt oder Rasur keinen Wunsch offen</li>
                                 </ul>
                             </div>
                         </div>
@@ -492,10 +474,10 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <ul class="bullitlist">
-                                    <li>Das Original aus Schottland</li>
-                                    <li>Ein Barbier in dritter Generation</li>
-                                    <li>Mit der Erfahrung aus aller Welt</li>
-                                    <li>Sein Beruf ist seine Leidenschaft</li>
+                                    <li class="trn">Das Original aus Schottland</li>
+                                    <li class="trn">Ein Barbier in dritter Generation</li>
+                                    <li class="trn">Mit der Erfahrung aus aller Welt</li>
+                                    <li class="trn">Sein Beruf ist seine Leidenschaft</li>
                                 </ul>
                             </div>
                         </div>
@@ -507,10 +489,10 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <ul class="bullitlist">
-                                    <li>Unser Barbier aus England</li>
-                                    <li>Trainierte und arbeitete mit den besten Barbieren Englands</li>
-                                    <li>Kreativ mit einem Auge fuers Detail</li>
-                                    <li>Ein Barbier, der seine Arbeit liebt</li>
+                                    <li class="trn">Unser Barbier aus England</li>
+                                    <li class="trn">Trainierte und arbeitete mit den besten Barbieren Englands</li>
+                                    <li class="trn">Kreativ mit einem Auge fuers Detail</li>
+                                    <li class="trn">Ein Barbier, der seine Arbeit liebt</li>
                                 </ul>
                             </div>
                         </div>
@@ -522,10 +504,10 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <ul class="bullitlist">
-                                    <li>ein Barbier aus England – Bristol</li>
-                                    <li>mit jahrelanger Barbiererfahrung</li>
-                                    <li>mit einer wahren Leidenschaft zum Handwerk, einem scharfen Auge fuers Detail und einer angenehmen Unterhaltung</li>
-                                    <li>bei ihm bekommst du mehr als nur einen Haarschnitt</li>
+                                    <li class="trn">ein Barbier aus England – Bristol</li>
+                                    <li class="trn">mit jahrelanger Barbiererfahrung</li>
+                                    <li class="trn">mit einer wahren Leidenschaft zum Handwerk, einem scharfen Auge fuers Detail und einer angenehmen Unterhaltung</li>
+                                    <li class="trn">bei ihm bekommst du mehr als nur einen Haarschnitt</li>
                                 </ul>
                             </div>
                         </div>
@@ -537,10 +519,10 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <ul class="bullitlist">
-                                    <li>Unser Barbier aus Liverpool (England)</li>
-                                    <li>In London und Brighton arbeitete er in den besten Shops</li>
-                                    <li>Ein Freund von Vintage-Haarschnitten mit moderner Technik</li>
-                                    <li>Er arbeitete fuer “Monster Energy“ auf Events in ganz Europa</li>
+                                    <li class="trn">Unser Barbier aus Liverpool (England)</li>
+                                    <li class="trn">In London und Brighton arbeitete er in den besten Shops</li>
+                                    <li class="trn">Ein Freund von Vintage-Haarschnitten mit moderner Technik</li>
+                                    <li class="trn">Er arbeitete fuer “Monster Energy“ auf Events in ganz Europa</li>
                                 </ul>
                             </div>
                         </div>
@@ -552,10 +534,10 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <ul class="bullitlist">
-                                    <li>Unser Barbier aus Belfast, der Stadt der Kontraste</li>
-                                    <li>Reiche Erfahrungen aus den verschiedensten Orten der Erde</li>
-                                    <li>Achtet aufs kleinste Detail</li>
-                                    <li>ein passionierter Profi, der seine Kreativitaet mit großem Vergnuegen auslebt</li>
+                                    <li class="trn">Unser Barbier aus Belfast, der Stadt der Kontraste</li>
+                                    <li class="trn">Reiche Erfahrungen aus den verschiedensten Orten der Erde</li>
+                                    <li class="trn">Achtet aufs kleinste Detail</li>
+                                    <li class="trn">ein passionierter Profi, der seine Kreativitaet mit großem Vergnuegen auslebt</li>
                                 </ul>
                             </div>
                         </div>
