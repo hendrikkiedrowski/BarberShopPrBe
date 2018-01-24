@@ -73,6 +73,9 @@ p.rotated {
     opacity: 0;
     z-index: 1
 }
+.leftp{
+    font-size: 1em;
+}
 
 p.rotated.animated, p.rotated.no-anime {
     opacity: 1
