@@ -390,3 +390,13 @@ h1 {
 #ueberuns {
     font-size: 1.5em;
 }
+.flag {
+    height: 1em;
+
+}
+.active-flag{
+	padding-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #e5e5e5;
+}

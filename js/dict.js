@@ -114,9 +114,18 @@ var dict = {
     },
     "ein passionierter Profi, der seine Kreativitaet mit hohem Vergnuegen auslebt": {
         en: "Passionate pro who loves to express his creativity"
+    },
+    "Sprache":{
+        en: "Language"
+    },
+    " Deutsch":{
+        en: " German"
+    },
+    " Englisch":{
+        en: " English"
     }
 };
-var translator;
+let translator;
 
 function translate() {
     if ((navigator.language || navigator.userLanguage) != "de") {
@@ -124,4 +133,12 @@ function translate() {
         translator = $('body').translate({lang: "en", t: dict}); //use English
     }
 
+}
+function translateEN() {
+    translator = $('body').translate({lang: "en", t: dict});
+    translator = $('footer').translate({lang: "en", t: dict});
+}
+function translateDE() {
+    translator = $('body').translate({lang: "de", t: dict});
+    translator = $('footer').translate({lang: "de", t: dict});
 }
