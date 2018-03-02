@@ -123,6 +123,15 @@ var dict = {
     },
     " Englisch":{
         en: " English"
+    },
+    "Britischer Barbier, mit vielen Jahren Berufserfahrung":{
+        en: "UK barber with years of experience"
+    },
+    "Geschickt im klassischen und auch im modernen Stil":{
+        en: "Skilled in both Classic and modern styles"
+    },
+    "mit besonderer Staerke in Bart-Trimms und Skin-Fades":{
+        en: "With particular strengths in Beard trims and skin fades"
     }
 };
 let translator;
